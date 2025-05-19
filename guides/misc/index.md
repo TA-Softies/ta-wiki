@@ -1,3 +1,11 @@
+---
+layout: default
+title: Misc - Guides
+nav_order: 3
+has_children: true
+permalink: /guides/misc
+---
+
 # Miscellaneous Guides
 
 This section contains various miscellaneous guides and resources.

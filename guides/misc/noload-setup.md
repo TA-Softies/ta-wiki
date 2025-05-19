@@ -1,3 +1,11 @@
+---
+layout: default
+title: NoLoAD Setup
+nav_order: 4
+has_children: false
+permalink: /guides/misc/noload-setup
+---
+
 # NoLoAD Environment Setup Guide
 
 ## Overview
