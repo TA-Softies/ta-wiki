@@ -46,19 +46,3 @@ This guide provides instructions for setting up NoLoAD to login to Domain Accoun
 
 1. Log out of the Current User and see if the New Login screen pops up.
 2. Try to login with a Domain account on the `TECHLAB` domain.
-
-### Access the Application
-
-The application should now be running at:
-- Web UI: http://localhost:8080
-- API: http://localhost:8080/api
-
-### Troubleshooting Common Issues
-
-- **Connection refused errors**: Make sure Docker containers are running
-- **Authentication fails**: Verify VPN connection is active
-- **Missing dependencies**: Run `./gradlew dependencies` to check
-
-### Next Steps
-
-Proceed to the [Development Workflow Guide](./development-workflow.md) for instructions on making changes to the project.
