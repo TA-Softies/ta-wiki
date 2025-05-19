@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Misc - Guides
-nav_order: 3
+parent: Guides
+title: Guides - Misc
+nav_order: 2
 has_children: true
 permalink: /guides/misc
 ---

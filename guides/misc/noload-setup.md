@@ -1,7 +1,8 @@
 ---
 layout: default
+parent: Guides - Misc
 title: NoLoAD Setup
-nav_order: 4
+nav_order: 3
 has_children: false
 permalink: /guides/misc/noload-setup
 ---
