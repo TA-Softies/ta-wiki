@@ -1,27 +1,44 @@
 ---
-title: Home
+title: Technical Assistant Wiki
 layout: home
+nav_order: 1
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# Welcome to the Unofficial APU Technical Assistant Wiki
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+This is an unofficial wiki created for Asia Pacific University's Technical Assistants. It serves as a collaborative resource hub containing supplementary information, guidelines, and tools to help TAs perform their duties effectively. 
 
-More specifically, the created site:
+{: .warning }
+This wiki is not officially endorsed by APU and is not a replacement for the [official TA Confluence page](https://kb.apu.edu.my/TA). Always refer to official sources for authoritative information.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+## What You'll Find Here
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+{: .highlight }
+This wiki is updated occasionally to ensure information remains relevant.
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+### Resources
+- **Guides** - Guides and Procedures
+- **FAQ** - Common questions
 
-To get started with creating a site, simply:
+## Quick Links
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+| Resource | Description |
+|:---------|:-----------|
+| [Roster](https://cloudmails-my.sharepoint.com/:x:/g/personal/ta_cloudmails_apu_edu_my/EWEG78HpMYZFoH1p2rfpI_8BJnNJarq5Eiunj6mv39bmHw) | View the Roster |
+| [TA Portal](https://cloudmails-my.sharepoint.com/personal/ta_cloudmails_apu_edu_my/taportal/SitePages/Home.aspx) | Access your TA Portal |
+| [TA Tools](https://ta.nodr.me) | Tools for TAs |
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+## Get Started
+
+If this is your first time visiting the wiki, 
+
+Welcome.
+
+---
+
+## Have Questions?
+
+Can't find what you're looking for? Email the Maintainer of this Wiki at [hello@nodr.me](mailto:hello@nodr.me).
 
 ----
 

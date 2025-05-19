@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HasRemovalPasscode</key>
+	<false/>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>BackgroundImage</key>
+			<string>/Library/LoginScreen/Wallpaper.png</string>
+			<key>BackgroundImageAlpha</key>
+			<integer>0</integer>
+			<key>LoginLogo</key>
+			<string>/Library/LoginScreen/Logo.png</string>
+			<key>LoginScreen</key>
+			<false/>
+			<key>PayloadDescription</key>
+			<string>Login Style Configuration for APU Mac Lab TL04-06</string>
+			<key>PayloadDisplayName</key>
+			<string>APU Mac Lab (TL04-06) Login Style</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>menu.nomad.login.ad.9DDC0E02-976C-4871-87B6-76CCDEAEDC78</string>
+			<key>PayloadOrganization</key>
+			<string>APU</string>
+			<key>PayloadType</key>
+			<string>menu.nomad.login.ad</string>
+			<key>PayloadUUID</key>
+			<string>9DDC0E02-976C-4871-87B6-76CCDEAEDC78</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>UsernameFieldPlaceholder</key>
+			<string>TP0XXXXX</string>
+			<key>ADDomain</key>
+			<string>techlab.apiit.edu.my</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Login Style Configuration for APU Mac Lab TL04-06</string>
+	<key>PayloadDisplayName</key>
+	<string>APU Mac Lab (TL04-06) Login Style</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>0D19DE09-2181-4852-B548-F92D8DF604F4</string>
+	<key>PayloadOrganization</key>
+	<string>APU</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>07A3C0A0-C638-42B1-8D2F-05887BBD9219</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
