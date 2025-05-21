@@ -59,6 +59,8 @@ Before installing NoLoAD, verify that your Mac can connect to the domain network
    - Add the DNS server: `10.61.20.33`
    - Click **OK** > **Apply**
 
+   ![DNS Configuration](/assets/NoLoAD/DNS.png)
+
 {: .warning }  
 Incorrect DNS settings will prevent your Mac from locating the domain controller, causing NoLoAD setup to fail.
 
