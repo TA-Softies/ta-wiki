@@ -70,7 +70,7 @@ Incorrect DNS settings will prevent your Mac from locating the domain controller
 If you're using system restore solutions like **Deep Freeze** or similar, you must **temporarily disable** them before installing NoLoAD or making any configuration changes. Once setup is complete and verified, you may re-enable the restore protection. Failure to do so may cause configuration loss after a reboot.
 
 1. **Download the Installer**  
-   [Download NoLoAD](../../assets/NoLoAD/NoMAD-Login-AD.pkg) and save it (typically in the **Downloads** folder).
+   [Download NoLoAD](https://cloudmails-my.sharepoint.com/:f:/g/personal/abdulla_meesum_cloudmails_apu_edu_my/Egu45iVTsFhIig7rMZiTSvIB6W8RVw7TvMUt3vDUnFLt3g?e=ENgZPc) (NoMAD-Login-AD.pkg) from the shared OneDrive folder and save it (typically in the **Downloads** folder).
 
 2. **Run the Installer**
    - Open **Finder**, go to **Downloads**, and double-click `NoMAD-Login-AD.pkg`.
@@ -89,7 +89,7 @@ Installation may take a few minutes. Avoid interrupting the process.
 ### Step 2: Install the Configuration Profile
 
 1. **Download the Configuration File**  
-   [Download `.mobileconfig` file](../../assets/NoLoAD/TL04-06_NoLoAD.mobileconfig)
+   [Download `.mobileconfig` file](https://cloudmails-my.sharepoint.com/:f:/g/personal/abdulla_meesum_cloudmails_apu_edu_my/Egu45iVTsFhIig7rMZiTSvIB6W8RVw7TvMUt3vDUnFLt3g?e=ENgZPc) from the shared OneDrive folder
 
 2. **Install the Profile**
    - Locate the file in **Downloads** and double-click it.
@@ -104,7 +104,7 @@ If installation doesn't start automatically, go to System Preferences > **Profil
 ### Step 3: Set Up the Lockscreen Assets
 
 1. **Download Assets**  
-   [Download lockscreen ZIP](../../assets/NoLoAD/LoginScreen.zip)
+   [Download lockscreen ZIP](https://cloudmails-my.sharepoint.com/:f:/g/personal/abdulla_meesum_cloudmails_apu_edu_my/Egu45iVTsFhIig7rMZiTSvIB6W8RVw7TvMUt3vDUnFLt3g?e=ENgZPc) from the shared OneDrive folder
 
 2. **Extract the ZIP**
    - Double-click the file in **Downloads** to extract the `LoginScreen` folder.
@@ -166,7 +166,7 @@ Domain accounts logged into the Mac will remain stored locally on the machine, e
 
 If you need to uninstall NoLoAD for any reason:
 
-1. Download the [uninstall script](../../assets/NoLoAD/Uninstall-NoLoAD.sh)
+1. Download the [uninstall script](https://cloudmails-my.sharepoint.com/:f:/g/personal/abdulla_meesum_cloudmails_apu_edu_my/Egu45iVTsFhIig7rMZiTSvIB6W8RVw7TvMUt3vDUnFLt3g?e=ENgZPc) from the shared OneDrive folder
 2. Open Terminal (Applications > Utilities > Terminal)
 3. Navigate to where you downloaded the script:
    ```bash
