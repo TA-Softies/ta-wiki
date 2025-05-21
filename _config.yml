@@ -23,7 +23,7 @@ back_to_top: true
 back_to_top_text: "Back to top"
 
 # Footer content
-footer_content: "Copyright &copy; 2025 APU Technical Assistant Team. Distributed under an MIT license."
+footer_content: "Copyright &copy; 2025 APU Technical Assistant Team."
 
 # Enable callouts
 callouts:

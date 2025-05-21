@@ -13,6 +13,11 @@ permalink: /guides/misc/noload-setup
 
 This guide offers step-by-step instructions for configuring NoLoAD (NoMAD Login AD) on macOS, enabling users to log in with their Domain Accounts without binding the system directly to a specific Domain. NoLoAD provides a streamlined solution for seamless domain authentication on Mac devices.
 
+{: .important-title }
+> **APU Network Specific Configuration**
+>
+> This guide and configuration are specifically designed for use on **Asia Pacific University (APU)'s Network**. The included configuration files, DNS settings, and domain references are all configured for APU's technical infrastructure. If you're setting up NoLoAD elsewhere, you'll need different configuration files.
+
 {: .note }
 NoLoAD is ideal for educational and enterprise settings where centralized user management is needed. It enables domain logins on Macs, which cannot fully join Active Directory domains like Windows devices.
 
@@ -34,21 +39,17 @@ Some steps in this installation may require administrator privileges on the Mac.
 Before installing NoLoAD, verify that your Mac can connect to the domain network. NoLoAD requires proper connectivity to function.
 
 1. **Check Network Connection**
-   - Ensure your Mac is connected to the **"IOT" WiFi** network or via **Ethernet (LAN)**.
-   - To verify WiFi: Click the WiFi icon in the menu bar and confirm "IOT" is selected.
+   - Ensure your Mac is connected to the **"IOT@APU" WiFi** network or via **Ethernet (LAN)**.
+   - To verify WiFi: Click the WiFi icon in the menu bar and confirm "IOT@APU" is selected.
    - For Ethernet: Confirm the cable is securely connected to both the Mac and the network port.
 
 2. **Verify Domain Controller Connectivity**
    - Open **Terminal** (Applications > Utilities > Terminal, or use ⌘+Space and search for "Terminal").
    - Run:
      ```bash
-     ping techlab.apiit.edu.my
-     ```
-   - You should see replies. Press `Control+C` to stop.
-   - Alternatively, test DNS with:
-     ```bash
      nslookup techlab.apiit.edu.my
      ```
+   - If the domain is resolving correctly, you should see its corresponding IP address in the output.
 
 3. **If Domain Resolution Fails:**
    - Go to **System Preferences** (or **System Settings** in newer macOS versions)
@@ -65,8 +66,11 @@ Incorrect DNS settings will prevent your Mac from locating the domain controller
 
 ### Step 1: Download and Install NoLoAD
 
+{: .important }
+If you're using system restore solutions like **Deep Freeze** or similar, you must **temporarily disable** them before installing NoLoAD or making any configuration changes. Once setup is complete and verified, you may re-enable the restore protection. Failure to do so may cause configuration loss after a reboot.
+
 1. **Download the Installer**  
-   [Download NoLoAD](https://files.nomad.menu/NoMAD-Login-AD.pkg) and save it (typically in the **Downloads** folder).
+   [Download NoLoAD](../../assets/NoLoAD/NoMAD-Login-AD.pkg) and save it (typically in the **Downloads** folder).
 
 2. **Run the Installer**
    - Open **Finder**, go to **Downloads**, and double-click `NoMAD-Login-AD.pkg`.
@@ -138,10 +142,14 @@ Improper permissions may prevent the login screen from displaying correctly.
 2. At the login screen, you should now see the customized NoLoAD login interface instead of the standard macOS login screen.
 
 3. To test domain authentication:
-   - Select "Other" if you don't see a list of domain users
-   - Enter your domain username in the format `username@TECHLAB` or `TECHLAB\username`
+   - Enter your domain username in one of the following formats:
+      - username@techlab.apiit.edu.my
+      - or simply username (the domain has already been configured in the configuration file)
    - Enter your domain password
    - Click the "Log In" button or press Return
+
+{: .note }
+Domain accounts logged into the Mac will remain stored locally on the machine, even after logout—just like on Windows. These accounts will persist until manually deleted.
 
 {: .note-title }
 > **Troubleshooting**
@@ -150,7 +158,7 @@ Improper permissions may prevent the login screen from displaying correctly.
 > - Restart your Mac to ensure all changes take effect
 > - Verify your network connection and DNS settings
 > - Check that the NoLoAD service is running by opening Terminal and typing: `sudo launchctl list | grep NoMAD`
-> - If issues persist, you might need to reinstall the NoLoAD package or contact your IT support
+> - If issues persist, you might need to reinstall the NoLoAD package
 
 ---
 
@@ -172,4 +180,4 @@ If you need to uninstall NoLoAD for any reason:
 5. Restart your Mac after the uninstallation completes
 
 {: .warning }
-Uninstalling NoLoAD will revert your Mac to the standard login system. Domain users may no longer be able to log in without additional configuration.
+Uninstalling NoLoAD will revert your Mac to the standard login system. Domain users may no longer be able to log in without additional configuration
