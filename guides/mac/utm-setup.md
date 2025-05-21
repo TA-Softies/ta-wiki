@@ -1,21 +1,7 @@
 ---
 layout: default
 parent: Mac
-title: Installation guideline for Windows 11**Step 2**: Set the Proper settings and click **Download**.
-
-{% include callout.html content="
-**Version**: Windows 11
-
-**Build**: Latest
-
-**Architecture**: Apple Silicon
-
-**Language**: *Your preferred language (For this guide we used \"English (United States)\")*
-
-**Edition**: Windows 11
-" type="important" %}
-
-{% include image.html file="/assets/UTM/10.png" alt="CrystalFetch settings" caption="Configure CrystalFetch settings and click Download" %}S - M series)
+title: Installation guideline for Windows 11 via UTM (macOS - M series)
 nav_order: 3
 has_children: false
 permalink: /guides/misc/utm-setup
