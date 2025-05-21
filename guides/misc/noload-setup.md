@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Guides - Misc
+parent: Misc
 title: NoLoAD Setup
 nav_order: 3
 has_children: false
