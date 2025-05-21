@@ -9,10 +9,6 @@ description: Guide to install Windows 11 on macOS with Apple Silicon chips using
 ---
 
 # Installation guideline for Windows 11 via UTM (macOS - M series)
-{:.no_toc}
-
-* TOC
-{:toc}
 
 This guide is meant to be a continuation for the [Installation guideline for for UTM (macOS - M Series)](https://apiit.atlassian.net/wiki/spaces/ITSM/pages/2540175384/Installation+guideline+for+UTM+macOS+-+M+series).
 
@@ -22,7 +18,8 @@ This guide is meant to be a continuation for the [Installation guideline for for
 
 As stated on the [UTM Guide for Windows 11](https://docs.getutm.app/guides/windows/):
 
-{% include callout.html content="The easiest way to obtain a Windows installer ISO is with CrystalFetch on macOS, a free utility for legally obtaining the newest Windows builds from Microsoft." type="quote" %}
+{: .note }
+> The easiest way to obtain a Windows installer ISO is with CrystalFetch on macOS, a free utility for legally obtaining the newest Windows builds from Microsoft.
 
 **CrystalFetch** is a MacOS app that you can use to download Windows Installer ISOs.
 
@@ -72,18 +69,14 @@ As stated on the [UTM Guide for Windows 11](https://docs.getutm.app/guides/windo
 
 **Step 2**: Set the Proper settings and click **Download**.
 
-> [!IMPORTANT]
+{: .important }
 > **Version**: Windows 11
->
 > **Build**: Latest
->
 > **Architecture**: Apple Silicon
->
-> **Language**: *Your preferred language (For this guide we used “English (United States)”)*
->
+> **Language**: *Your preferred language (For this guide we used "English (United States)")*
 > **Edition**: Windows 11
 
-![](../../assets/UTM/10.png)
+{% include image.html file="/assets/UTM/10.png" alt="Set the proper config" caption="Set the proper config" %}
 
 **Step 3**: Click **Accept** and wait for it to finish downloading.
 
@@ -129,7 +122,8 @@ Now that you have downloaded the ISO file, we will go ahead and Set up and Boot 
 # Install Windows
 {:.no_toc}
 
-{% include callout.html content="This section is under construction and will be updated soon." type="info" %}
+{: .note }
+> This section is under construction and will be updated soon.
 
 # Set up Windows
 {:.no_toc}
