@@ -60,7 +60,7 @@ Before installing NoLoAD, verify that your Mac can connect to the domain network
    - Click **OK** > **Apply**
 
    ![DNS Configuration](/assets/NoLoAD/DNS.png)
-   *Fig 1: Adding APU's DNS server in macOS Network settings*
+    <div align="center"><em>Fig 1: Adding APU's DNS server in macOS Network settings</em></div>
 
 {: .warning }  
 Incorrect DNS settings will prevent your Mac from locating the domain controller, causing NoLoAD setup to fail.
