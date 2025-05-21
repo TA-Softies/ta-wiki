@@ -16,17 +16,17 @@ This guide offers step-by-step instructions for configuring NoLoAD (NoMAD Login 
 {: .important-title }
 > **APU Network Specific Configuration**
 >
-> This guide and configuration are specifically designed for use on **Asia Pacific University (APU)'s Network**. The included configuration files, DNS settings, and domain references are all configured for APU's technical infrastructure. If you're setting up NoLoAD elsewhere, you'll need different configuration files.
+> This guide and configuration are specifically designed for use on **Asia Pacific University (APU)'s Network**. The included configuration files, DNS settings, and domain references are all configured for APU's technical infrastructure. If you're setting up NoLoAD elsewhere, you'll need a different configuration.
 
 {: .note }
-NoLoAD is ideal for educational and enterprise settings where centralized user management is needed. It enables domain logins on Macs, which cannot fully join Active Directory domains like Windows devices.
+NoLoAD is ideal for educational and enterprise settings where centralized user management is needed. It enables domain logins on Macs, which cannot fully join Active Directory domains similar to Windows devices.
 
 ## Prerequisites
 
 - A Mac computer running macOS 10.12 (Sierra) or newer
 - A working internet connection
 - Access to the institution's network (either via WiFi or Ethernet connection)
-- Basic familiarity with macOS (guide includes detailed screenshots for beginners)
+- Basic familiarity with macOS
 
 {: .warning }
 Some steps in this installation may require administrator privileges on the Mac. If you don't have admin access, please contact your fellow TAs for assistance.
@@ -140,7 +140,7 @@ Improper permissions may prevent the login screen from displaying correctly.
 
 1. Save any open work and log out of your current user account:
    - Click the Apple menu (top left corner) and select "Log Out [Username]"
-   - Or use the keyboard shortcut ⌘+Shift+Q
+   - Or use the keyboard shortcut **⌘+Shift+Q**
 
 2. At the login screen, you should now see the customized NoLoAD login interface instead of the standard macOS login screen.
 
