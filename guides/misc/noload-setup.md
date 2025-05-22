@@ -31,6 +31,12 @@ NoLoAD is ideal for educational and enterprise settings where centralized user m
 {: .warning }
 Some steps in this installation may require administrator privileges on the Mac. If you don't have admin access, please contact your fellow TAs for assistance.
 
+## Contents
+{: .no_toc }
+
+1. TOC
+{:toc}
+
 ## Installation Steps
 
 ### Step 0: Ensure the Device Can Connect to the Domain Controller
@@ -162,6 +168,64 @@ Domain accounts logged into the Mac will remain stored locally on the machine, e
 > - Verify your network connection and DNS settings
 > - Check that the NoLoAD service is running by opening Terminal and typing: `sudo launchctl list | grep NoMAD`
 > - If issues persist, you might need to reinstall the NoLoAD package
+
+
+### Managing Domain User Profiles
+
+Over time, a Mac with NoLoAD may accumulate multiple domain user profiles. For maintenance or troubleshooting purposes, you may need to remove these profiles.
+
+{: .warning }
+Both methods permanently remove user accounts and their associated data from the Mac. Ensure any important files are backed up before proceeding.
+
+#### Automated Removal Method
+
+1. **Download the Removal Script**
+    - [Download the `remove_ad_users.sh` script](https://cloudmails-my.sharepoint.com/:f:/g/personal/abdulla_meesum_cloudmails_apu_edu_my/Egu45iVTsFhIig7rMZiTSvIB6W8RVw7TvMUt3vDUnFLt3g?e=ENgZPc) from the shared OneDrive folder
+
+2. **Run the Script to Remove Domain Users**
+    - Open **Terminal** (Applications > Utilities > Terminal)
+    - Navigate to your Downloads folder:
+      ```bash
+      cd ~/Downloads
+      ```
+    - Make the script executable:
+      ```bash
+      chmod +x remove_ad_users.sh
+      ```
+    - Run the script with admin privileges:
+      ```bash
+      sudo ./remove_ad_users.sh
+      ```
+    - The script will list all domain users and provide options to remove specific users or all domain users
+
+#### Manual Removal Method
+
+If you prefer to remove domain users manually:
+
+1. **Open System Preferences/Settings**
+   - Click the Apple menu (top left) and select "System Preferences" (or "System Settings" in newer macOS)
+   - Navigate to "Users & Groups"
+
+2. **Unlock the Preference Pane**
+   - Click the lock icon in the bottom left corner
+   - Enter your administrator credentials when prompted
+
+3. **Remove Domain User Accounts**
+   - Select the domain user account you wish to remove from the list on the left
+   - Click the minus (-) button below the list
+   - In the dialog that appears, choose one of the options:
+    - In the dialog that appears, choose one of the options:
+      - **"Delete the home folder"** (removes all user data, recommended)
+      - "Save the home folder in a disk image" (preserves data)
+      - "Don't change the home folder" (leaves data intact)
+   - Click "Delete User"
+
+4. **Repeat as Needed**
+   - Follow the same process for each domain user account you want to remove
+
+{: .note }
+Removing user profiles periodically on lab computers helps maintain system hygiene and free up disk space.
+
 
 ---
 
