@@ -9,7 +9,7 @@ description: Guide to install Windows 11 on macOS with Apple Silicon chips using
 ---
 
 {: .wip-badge }
-> **WORK IN PROGRESS** - This guide is still being developed and is not yet complete.
+> This guide is still being developed and is not yet complete.
 
 # Installation guideline for Windows 11 via UTM (macOS - M series)
 
