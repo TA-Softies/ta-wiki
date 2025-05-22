@@ -192,11 +192,29 @@ Both methods permanently remove user accounts and their associated data from the
       ```bash
       chmod +x remove_ad_users.sh
       ```
-    - Run the script with admin privileges:
+    - Run the script with admin privileges in one of two modes:
+      
+      **Dry Run Mode** (safely preview changes without making them):
+      ```bash
+      sudo ./remove_ad_users.sh --dry-run
+      ```
+      
+      **Normal Mode** (actually remove users):
       ```bash
       sudo ./remove_ad_users.sh
       ```
-    - The script will list all domain users and provide options to remove specific users or all domain users
+      
+    - The script will:
+      1. Scan and identify all Active Directory (AD) users on the Mac
+      2. Display a list of all found AD users with their account names
+      3. Ask for confirmation before proceeding
+      4. If confirmed, remove all AD user accounts and associated data:
+         - User account entries
+         - Home directories
+         - System preference files
+         - Application caches
+         - Temporary files
+         - Various user-related data throughout the system
 
 #### Manual Removal Method
 
