@@ -41,3 +41,6 @@ callouts:
     color: purple
   highlight:
     color: yellow
+  wip-badge:
+    title: Work In Progress
+    color: orange

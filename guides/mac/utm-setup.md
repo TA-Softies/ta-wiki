@@ -8,9 +8,18 @@ permalink: /guides/misc/utm-setup
 description: Guide to install Windows 11 on macOS with Apple Silicon chips using UTM
 ---
 
+{: .wip-badge }
+> **WORK IN PROGRESS** - This guide is still being developed and is not yet complete.
+
 # Installation guideline for Windows 11 via UTM (macOS - M series)
 
 This guide is meant to be a continuation for the [Installation guideline for for UTM (macOS - M Series)](https://apiit.atlassian.net/wiki/spaces/ITSM/pages/2540175384/Installation+guideline+for+UTM+macOS+-+M+series).
+
+## Contents
+{: .no_toc }
+
+1. TOC
+{:toc}
 
 # Download Windows 11 ISO
 
