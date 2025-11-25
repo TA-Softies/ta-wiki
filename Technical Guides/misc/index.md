@@ -1,10 +1,10 @@
 ---
 layout: default
-parent: Guides
+parent: Technical Guides
 title: Misc
 nav_order: 2
 has_children: true
-permalink: /guides/misc
+permalink: /technical-guides/misc
 ---
 
 # Miscellaneous Guides
@@ -14,6 +14,7 @@ This section contains various miscellaneous guides and resources.
 ## Contents
 
 - [NoLoAD Setup](noload-setup.md) - Guide for setting up a NoLoAD on a Mac.
+- [Lab Drive Reimaging](reimaging-guide.md) - Guide for reimaging lab workstation drives using Clonezilla.
 
 ## Overview
 

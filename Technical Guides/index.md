@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Guides
+title: Technical Guides
 nav_order: 1
 has_children: true
-permalink: /guides
+permalink: /technical-guides
 ---
 
 # Technical Guides

@@ -1,5 +1,5 @@
 title: TA Wiki
-description: An Unofficial Wiki for the Technical Assistant team at Asia Pacific University
+description: An Wiki for the Technical Assistant team at Asia Pacific University
 theme: just-the-docs
 
 logo: "/assets/images/ta-wiki.png"
@@ -23,7 +23,7 @@ back_to_top: true
 back_to_top_text: "Back to top"
 
 # Footer content
-footer_content: "Copyright &copy; 2025 APU Technical Assistant Team."
+footer_content: "Copyright &copy; 2025 APU TA Software Functional Unit."
 
 # Enable callouts
 callouts:

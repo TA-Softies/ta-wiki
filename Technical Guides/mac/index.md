@@ -1,10 +1,10 @@
 ---
 layout: default
-parent: Guides
+parent: Technical Guides
 title: Mac
 nav_order: 2
 has_children: true
-permalink: /guides/mac
+permalink: /technical-guides/mac
 ---
 
 # Mac Guides

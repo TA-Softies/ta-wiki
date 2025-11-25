@@ -4,7 +4,7 @@ parent: Mac
 title: Installation guideline for Windows 11 via UTM (macOS - M series)
 nav_order: 3
 has_children: false
-permalink: /guides/misc/utm-setup
+permalink: /technical-guides/misc/utm-setup
 description: Guide to install Windows 11 on macOS with Apple Silicon chips using UTM
 ---
 
