@@ -11,7 +11,7 @@ permalink: /technical-guides/misc/reimaging-guide
 
 ## Overview
 
-This guide provides step-by-step instructions for reimaging SATA/NVMe drives using the Reimaging Station in TechCentre. The process uses Clonezilla to restore lab workstation drives to a clean, standardized state with pre-configured Windows images.
+This guide provides step-by-step instructions for reimaging SATA/NVMe drives using the Reimaging Station in TechCentre. The process uses Clonezilla to restore lab workstation drives to a clean, standardized state with pre-configured Windows Lab images.
 
 {: .important-title }
 > **Lab PCs ONLY**
@@ -78,7 +78,7 @@ Both images come pre-configured with standard lab software and settings. Choose 
 
 1. **Locate the Equipment**
    - Ensure the Reimaging Station PC is powered on
-   - Locate the Clonezilla USB drive (should be labeled)
+   - Ensure the Clonezilla USB drive is plugged in (should be labeled & plugged-in to the back of the PC)
    - Locate the SATA adapter cable
 
 <!-- TODO: Add image of the reimaging station setup -->
@@ -87,8 +87,7 @@ Both images come pre-configured with standard lab software and settings. Choose 
 If you cannot find the Clonezilla USB or SATA adapter, inform any Software FU member.
 
 2. **Connect the Drive**
-   - Power off the Reimaging Station if it's currently running
-   - Connect the lab SSD to the SATA adapter
+   - Connect the lab PC SSD to the SATA adapter
    - Ensure the connection is secure
 
 <!-- TODO: Add image showing SATA connection -->
@@ -112,11 +111,11 @@ If you cannot find the Clonezilla USB or SATA adapter, inform any Software FU me
 The exact key depends on the motherboard manufacturer. Common keys are F12 (Dell/Lenovo), F11 (HP), or ESC (ASUS).
 
 2. **Select Clonezilla USB**
-   - From the boot menu, select the USB drive (may be labeled as "USB HDD" or show the drive manufacturer)
+   - From the boot menu, select the USB drive (may be labeled as "SanDisk" or show the drive manufacturer)
    - Press **Enter** to boot
 
 3. **Clonezilla Boot Options**
-   - When Clonezilla loads, select the default option: **Clonezilla live (Default settings)**
+   - When Clonezilla loads, select the default option: **Clonezilla live (VGA 800x600)**
    - Press **Enter**
 
 <!-- TODO: Add image of Clonezilla boot screen -->
@@ -129,8 +128,8 @@ The exact key depends on the motherboard manufacturer. Common keys are F12 (Dell
    - Select your preferred language (default is **English**)
    - Press **Enter**
 
-2. **Keymap Configuration**
-   - Select **Don't touch keymap** (recommended)
+2. **Keyboard layout Configuration**
+   - Select **Keep** (recommended)
    - Press **Enter**
 
 3. **Start Clonezilla**
@@ -149,7 +148,7 @@ The exact key depends on the motherboard manufacturer. Common keys are F12 (Dell
    - Wait for Clonezilla to detect available drives
 
 {: .important }
-Make sure you can identify which drive contains the backup images (usually an external drive or secondary internal drive at the station).
+Make sure you can identify which drive contains the backup images (usually an 1TB NVMe drive inside the station).
 
 ---
 
@@ -157,18 +156,18 @@ Make sure you can identify which drive contains the backup images (usually an ex
 
 1. **Choose Image Source**
    - Clonezilla will display all available drives
-   - Select the drive that contains the lab images
+   - Select the drive that contains the lab images (Partition usually starts with _nvme0n1_)
    - Press **Enter**
 
 <!-- TODO: Add image showing drive selection -->
 
 2. **Select Image Directory**
    - Navigate to the directory containing the images
-   - Press **Enter** to confirm
-   - Press **Enter** again to continue
+   - Press **Tab** twice to navigate to the **Done** button
+   - Press **Enter** to continue
 
 3. **Clonezilla Mode**
-   - Select **Beginner mode** (recommended)
+   - Select **Expert mode** (recommended)
    - Press **Enter**
 
 4. **Operation Selection**
@@ -187,7 +186,11 @@ Make sure you can identify which drive contains the backup images (usually an ex
 {: .note }
 Image names may have timestamps or version numbers appended. Choose the most recent version unless instructed otherwise.
 
-6. **Select Target Drive**
+6. **Advanced Extra Options**
+   - Choose **-k1** to restore the image with proportional partition sizes
+   - Press **Enter**
+
+7. **Select Target Drive**
    - Clonezilla will display all connected drives
    - **CAREFULLY** select the lab SSD you want to reimage (typically 1TB)
    - Press **Enter**
@@ -272,8 +275,7 @@ The first boot may take longer as Windows completes initial setup. This is norma
 
 - Check all cable connections are secure
 - Verify the SATA adapter is functioning
-- Try a different SATA port on the adapter
-- Ensure the drive has power (for external enclosures)
+- Try a different USB port on for the SATA adapter
 
 ### Restoration Fails
 
@@ -286,6 +288,7 @@ The first boot may take longer as Windows completes initial setup. This is norma
 
 - Verify the drive was fully restored (check completion message)
 - Check BIOS boot order settings on the lab workstation
+- Check SATA operation mode (Should be AHCI)
 - Ensure the drive is properly connected in the workstation
 - Try reimaging again if the issue persists
 
@@ -294,9 +297,9 @@ The first boot may take longer as Windows completes initial setup. This is norma
 ## Best Practices
 
 1. **Before Starting:**
-   - **VERIFY the computer is a Lab PC** - Never reimage personal or staff computers
+   - **VERIFY the computer is a Lab PC** - Never reimage personal or other non-lab computers
    - **Confirm reimaging is truly necessary** - Try all other solutions first
-   - Document what troubleshooting steps were already attempted
+   - Document what troubleshooting steps were already attempted in Rounding form / Issue Master List
    - Verify you have the correct drive
    - Check that all necessary equipment is available
    - Allow sufficient time (1 hour recommended)
@@ -313,8 +316,7 @@ The first boot may take longer as Windows completes initial setup. This is norma
 
 4. **Equipment Care:**
    - Handle drives carefully to avoid damage
-   - Store the Clonezilla USB securely
-   - Report any equipment damage or loss immediately
+   - Report any equipment damage or loss immediately to a Software FU member
 
 ---
 
@@ -325,21 +327,12 @@ This guide will be updated as new equipment (such as NVMe adapters) becomes avai
 
 ### Image Update Schedule
 
-Lab images are updated periodically to include:
-- Latest Windows updates
-- Updated lab software
-- Security patches
-- Performance optimizations
-
 Contact any Software FU member for information on the most current image versions.
 
 ### Getting Help
 
 If you encounter issues not covered in this guide:
 1. Consult with a Software FU member
-
-{: .warning }
-**Reminder:** This process is strictly for Lab PCs only. If a student or staff member requests reimaging for their personal computer, politely explain that this service is not available and direct them to appropriate IT support channels.
 
 ---
 
@@ -351,7 +344,6 @@ If you encounter issues not covered in this guide:
 - [ ] SATA adapter
 - [ ] Lab SSD (1TB)
 - [ ] Reimaging Station PC
-- [ ] USB keyboard/mouse (if needed)
 
 ### Estimated Times
 
@@ -366,4 +358,4 @@ If you encounter issues not covered in this guide:
 
 ---
 
-*Last Updated: November 2025*
+*Last Updated: 26 November 2025*
