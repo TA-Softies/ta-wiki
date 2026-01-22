@@ -7,7 +7,11 @@ favicon_ico: "/assets/images/favicon.ico"
 
 url: https://ta-wiki.nodr.me
 
-color-scheme: auto
+# Enable automatic dark mode with toggle button
+color_scheme: auto
+
+color_scheme_toggle: 
+  enabled: true
 
 aux_links:
   APU Homepage: https://www.apu.edu.my
@@ -16,11 +20,11 @@ aux_links:
 search_enabled: true
 
 # Enable copy code button for code blocks
-enable_copy_code_button: true
+enable_copy_code_button:  true
 
 # Back to top link
 back_to_top: true
-back_to_top_text: "Back to top"
+back_to_top_text:  "Back to top"
 
 # Footer content
 footer_content: "Copyright &copy; 2025 APU TA Software Functional Unit."
@@ -36,9 +40,9 @@ callouts:
   new:
     title: New
     color: green
-  note:
+  note: 
     title: Note
-    color: purple
+    color:  purple
   highlight:
     color: yellow
   wip-badge:
